@@ -14,7 +14,7 @@
 <body>
   <button onclick="location.href='main.php'" class="title">GallopGenius</button>
   <div class="ue">
-    <button onclick="location.href='yosou.php'" class="botan">AI予想だしん</button>
+    <button onclick="location.href='yosou.php'" class="botan">AI予想</button>
     <button onclick="location.href='shutuba.php'" class="botan">出馬表</button>
     <button onclick="location.href='kaishu.php'" class="botan">AI回収率</button>
     <button onclick="location.href='baken.php'" class="botan">馬券の種類</button>
