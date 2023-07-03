@@ -1,142 +1,150 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
-
-.title{
-  font-size: 55px;
-  background: none;
-  border: none;
-  font-family: 'Dela Gothic One', cursive;
-  display: block;
-  margin: auto;
-}
-h2{
-  text-align: center;
-  font-size: 50px;
-  font-weight: 100;
-  position: relative;
-  margin-bottom: 0;
-}
-.resumei{
-  text-align: center;
-  font-size: 50px;
-  font-weight: 100;
-  color: #f80a0a;
-  margin-top: 0;
-}
-.ue{
-  display: flex;
-  position: relative;
-  top: 30px;
-  left: 220px;
-}
-.sita{
-  display: flex;
-  position: relative;
-  top: -20px;
-  left: 320px;
-}
-body{
-  font-family: 'Dela Gothic One', cursive;
-  overflow-x: hidden;
-  background-color: #e7ffdb;
-}
-
-.botan{
-  font-family: 'Dela Gothic One', cursive;
-  padding:10px;
-  margin: 30px;
-  background: linear-gradient(to top, #eef7e1 0%,#adff2f 100%); /*グラデーションの指定*/
-  box-shadow: 0px 0px 15px 0px rgba(141, 140, 140, 0.8); /*影の指定*/
-  border-radius: 20px;
-  width: 150px;
-  height: 150px;
-  font-size: 20px;
-  text-decoration: none;
-  transition: .3s;
-}
-.botan:hover{
-  box-shadow: 0px 12px 24px rgba(89, 185, 10, 0.38);
-  transform: translateY(-10px);
-}
-.date{
-  text-align: center;
-  font-size: 20px;
-  position: relative;
-  top: -10px;
-}
-.honmei{
-  text-align: center;
-  font-size: 35px;
-  margin: 0;
-}
-.hatena{
-  text-align: right;
-  font-size: 20px;
-}
-.nakami{
-  text-align: center;
-  font-size: 25px;
-}
-.koumoku{
-  font-size: 20px;
-  width: fit-content;
-  margin: auto;
-  font-weight: lighter;
-}
-ul{
-  padding: 1em 1em 1em 3em; /*余白*/
-  border: solid 3px #3dbfb8; /*枠線*/
-}
-.setumei{
-  font-size: 25px;
-  line-height: 70px;
-  text-align: center;
-  margin-right:auto; 
-  margin-left:auto;
-  width: 800px;
-}
-.red{
-  color: red;
-}
-.tan{
-  font-size: 50px;
-}
-.main{
-  background-color: none;
-}
-table{
-  font-weight: lighter;
-  font-size: 20px;
-}
-td{
-  padding: 20px;
-}
-th{
-  padding: 20px;
-}
-.naka_yosou{
-  text-align: center;
-  margin: auto;
-}
-.naka_yosou h3{
-  display: block;
-  font-weight: lighter;
-  font-size: 40px;
-}
-.naka_yosou p{
-  text-align: left;
-  display: inline-block;
-  font-weight: lighter;
-  font-size: 15px;
-}
-h3{
-  text-align: center;
-  font-size: 35px;
-  font-weight: lighter;
-}
-.naka p{
-  font-size: 20px;
-}
-.setumei{
-  text-align: center;
-  display: block;
+/*スマホ*/
+ @media screen and (max-width: 428px) {
+  body{
+    background-color: yellow;
+  }
+ }
+/*パソコン*/
+@media screen and (min-width: 1024px) {
+  .title{
+    font-size: 55px;
+    background: none;
+    border: none;
+    font-family: 'Dela Gothic One', cursive;
+    display: block;
+    margin: auto;
+  }
+  h2{
+    text-align: center;
+    font-size: 50px;
+    font-weight: 100;
+    position: relative;
+    margin-bottom: 0;
+  }
+  .resumei{
+    text-align: center;
+    font-size: 50px;
+    font-weight: 100;
+    color: #f80a0a;
+    margin-top: 0;
+  }
+  .ue{
+    display: flex;
+    position: relative;
+    top: 30px;
+    left: 220px;
+  }
+  .sita{
+    display: flex;
+    position: relative;
+    top: -20px;
+    left: 320px;
+  }
+  body{
+    font-family: 'Dela Gothic One', cursive;
+    overflow-x: hidden;
+    background-color: #e7ffdb;
+  }
+  
+  .botan{
+    font-family: 'Dela Gothic One', cursive;
+    padding:10px;
+    margin: 30px;
+    background: linear-gradient(to top, #eef7e1 0%,#adff2f 100%); /*グラデーションの指定*/
+    box-shadow: 0px 0px 15px 0px rgba(141, 140, 140, 0.8); /*影の指定*/
+    border-radius: 20px;
+    width: 150px;
+    height: 150px;
+    font-size: 20px;
+    text-decoration: none;
+    transition: .3s;
+  }
+  .botan:hover{
+    box-shadow: 0px 12px 24px rgba(89, 185, 10, 0.38);
+    transform: translateY(-10px);
+  }
+  .date{
+    text-align: center;
+    font-size: 20px;
+    position: relative;
+    top: -10px;
+  }
+  .honmei{
+    text-align: center;
+    font-size: 35px;
+    margin: 0;
+  }
+  .hatena{
+    text-align: right;
+    font-size: 20px;
+  }
+  .nakami{
+    text-align: center;
+    font-size: 25px;
+  }
+  .koumoku{
+    font-size: 20px;
+    width: fit-content;
+    margin: auto;
+    font-weight: lighter;
+  }
+  ul{
+    padding: 1em 1em 1em 3em; /*余白*/
+    border: solid 3px #3dbfb8; /*枠線*/
+  }
+  .setumei{
+    font-size: 25px;
+    line-height: 70px;
+    text-align: center;
+    margin-right:auto; 
+    margin-left:auto;
+    width: 800px;
+  }
+  .red{
+    color: red;
+  }
+  .tan{
+    font-size: 50px;
+  }
+  .main{
+    background-color: none;
+  }
+  table{
+    font-weight: lighter;
+    font-size: 20px;
+  }
+  td{
+    padding: 20px;
+  }
+  th{
+    padding: 20px;
+  }
+  .naka_yosou{
+    text-align: center;
+    margin: auto;
+  }
+  .naka_yosou h3{
+    display: block;
+    font-weight: lighter;
+    font-size: 40px;
+  }
+  .naka_yosou p{
+    text-align: left;
+    display: inline-block;
+    font-weight: lighter;
+    font-size: 15px;
+  }
+  h3{
+    text-align: center;
+    font-size: 35px;
+    font-weight: lighter;
+  }
+  .naka p{
+    font-size: 20px;
+  }
+  .setumei{
+    text-align: center;
+    display: block;
+  }
 }
