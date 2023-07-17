@@ -13,7 +13,7 @@
 <body>
     <h1>管理者画面</h1>
     <h2>中の人予想</h2>
-    <form name="hostForm" action="nakayosou.php" method="post">
+    <form name="hostForm" action="kakunin.php" method="post">
         <div>名前</div>
         <select name="p_name">
             <option value="平野">平野</option>
