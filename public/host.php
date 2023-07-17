@@ -13,11 +13,17 @@
 <body>
     <h1>管理者画面</h1>
     <h2>中の人予想</h2>
-    <form name="hostForm" action="admin_predict.php" method="post">
-        名前：平野
+    <form name="hostForm" action="nakayosou.php" method="post">
+        <div>名前</div>
+        <select name="p_name">
+            <option value="平野">平野</option>
+            <option value="永島">永島</option>
+            <option value="舘">舘</option>
+            <option value="菊地">菊地</option>
+        </select>
         <br>
-        予想：
-        <select name="horseNumber">
+        <div>予想馬番：</div>
+        <select name="h_Number">
             <option value="1">1</option>
             <option value="2">2</option>
             <option value="3">3</option>
@@ -37,10 +43,13 @@
             <option value="17">17</option>
             <option value="18">18</option>
         </select>
-        <input type="textarea">
         <br>
-        <label>予想理由：</label><br>
-        <textarea id="reason" name="reason"></textarea>
+        <div>予想馬名</div>
+        <input type="text" name="h_name">
+        <br>
+        <div>予想理由</div>
+        <br>
+        <textarea id ="text" name="p_reason"></textarea>
         <br>
         <input type="submit" value="予想確定">
     </form>
