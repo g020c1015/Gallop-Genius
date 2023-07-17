@@ -44,7 +44,12 @@
     //画面表示
     $sql2 = 'SELECT * FROM host_data';
     $stmt2 = $PDO->query($sql2);
+  }catch(PDOException $e){
+    echo'データベースにアクセスできません'.$e->getMessage();
+    exit; 
   }
+    
+  ?>
   <button onclick="location.href='main.php'" class="title">GallopGenius</button>
   <div class="ue">
     <button onclick="location.href='yosou.php'" class="botan">AI予想</button>
@@ -93,6 +98,5 @@
       </p>
     </div>
   </div>
-  ?>
 </body>
 </html>
