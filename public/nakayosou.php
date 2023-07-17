@@ -12,8 +12,9 @@
   <script type="text/javascript" src="keiba.js"></script>
 </head>
 <body>
-  //追加(2023/07/17/tachi)
+  
   <?php
+//追加(2023/07/17/tachi)
   //注意：まだローカル環境でしか動かない
   $dsn = "mysql:host=localhost;dbname=host_db;";
   $user = "root";
