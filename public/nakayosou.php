@@ -13,25 +13,7 @@
 </head>
 <body>
   
-  <?php
-  //追加(2023/07/17/tachi)
-  //注意：まだローカル環境でしか動かない
-  $dsn = "mysql:host=localhost;dbname=host_db;";
-  $user = "root";
-  $password = "root";
-
-  try{
-    $PDO = new PDO($dsn,$user,$password);
-    
-    //画面表示
-    $sql2 = 'SELECT * FROM host_data';
-    $stmt2 = $PDO->query($sql2);
-  }catch(PDOException $e){
-    echo'データベースにアクセスできません'.$e->getMessage();
-    exit; 
-  }
-    
-  ?>
+  
   <button onclick="location.href='main.php'" class="title">GallopGenius</button>
   <div class="ue">
     <button onclick="location.href='yosou.php'" class="botan">AI予想</button>
@@ -50,33 +32,77 @@
     <div class="naka">
       <h3>中の人Aさん</h3></br>
       <p>
-        馬番:5</br>
-        馬名:コパノランサー</br>
-        予想理由:ただただ強い。以上。
+      <?php
+        $dsn = 'mysql:host=localhost;dbname=host_db;';
+        $user = "root";
+        $password = "root";
+        $PDO = new PDO($dsn,$user,$password);
+        //SQL文
+        $sql = 'SELECT * FROM host_data WHERE p_name = "平野"';
+        $stmt = $PDO->query($sql);
+        while($result = $stmt->fetch(PDO::FETCH_ASSOC)){
+        echo"馬番:{$result['h_number']}<br/>";
+        echo"馬名:{$result['h_name']}<br/>";
+        echo"予想理由:{$result['p_reason']}<br/>";
+        }
+      ?>
       </p>
     </div>
     <div class="naka">
       <h3>中の人Bさん</h3>
       <p>
-        馬番:5</br>
-        馬名:コパノランサー</br>
-        予想理由:ただただ強い。以上。
+      <?php
+        $dsn = 'mysql:host=localhost;dbname=host_db;';
+        $user = "root";
+        $password = "root";
+        $PDO = new PDO($dsn,$user,$password);
+        //SQL文
+        $sql = 'SELECT * FROM host_data WHERE p_name = "永島"';
+        $stmt = $PDO->query($sql);
+        while($result = $stmt->fetch(PDO::FETCH_ASSOC)){
+        echo"馬番:{$result['h_number']}<br/>";
+        echo"馬名:{$result['h_name']}<br/>";
+        echo"予想理由:{$result['p_reason']}<br/>";
+        }
+      ?>
       </p>
     </div>
     <div class="naka">
       <h3>中の人Cさん</h3>
       <p>
-        馬番:5</br>
-        馬名:コパノランサー</br>
-        予想理由:ただただ強い。以上。
+      <?php
+        $dsn = 'mysql:host=localhost;dbname=host_db;';
+        $user = "root";
+        $password = "root";
+        $PDO = new PDO($dsn,$user,$password);
+        //SQL文
+        $sql = 'SELECT * FROM host_data WHERE p_name = "舘"';
+        $stmt = $PDO->query($sql);
+        while($result = $stmt->fetch(PDO::FETCH_ASSOC)){
+        echo"馬番:{$result['h_number']}<br/>";
+        echo"馬名:{$result['h_name']}<br/>";
+        echo"予想理由:{$result['p_reason']}<br/>";
+        }
+      ?>
       </p>
     </div>
     <div class="naka">
       <h3>中の人Dさん</h3>
-    <p>
-        馬番:5</br>
-        馬名:コパノランサー</br>
-        予想理由:ただただ強い。以上。
+      <p>
+      <?php
+        $dsn = 'mysql:host=localhost;dbname=host_db;';
+        $user = "root";
+        $password = "root";
+        $PDO = new PDO($dsn,$user,$password);
+        //SQL文
+        $sql = 'SELECT * FROM host_data WHERE p_name = "菊地"';
+        $stmt = $PDO->query($sql);
+        while($result = $stmt->fetch(PDO::FETCH_ASSOC)){
+        echo"馬番:{$result['h_number']}<br/>";
+        echo"馬名:{$result['h_name']}<br/>";
+        echo"予想理由:{$result['p_reason']}<br/>";
+        }
+      ?>
       </p>
     </div>
   </div>
