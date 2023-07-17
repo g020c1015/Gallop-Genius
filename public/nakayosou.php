@@ -14,7 +14,7 @@
 <body>
   
   <?php
-//追加(2023/07/17/tachi)
+  //追加(2023/07/17/tachi)
   //注意：まだローカル環境でしか動かない
   $dsn = "mysql:host=localhost;dbname=host_db;";
   $user = "root";
@@ -23,25 +23,6 @@
   try{
     $PDO = new PDO($dsn,$user,$password);
     
-    //databaseからデータを取得
-    $p_name = $_POST["p_name"];
-    $h_number = $_POST["h_number"];
-    $h_name = $_POST["h_name"];
-    $p_reason = $_POST["p_reason"];
-
-    //sql文
-    $sql = "INSERT INTO host_data(P_name,H_number,H_name,P_reason)
-            VALUES(:P_name,:H_number,:H_name,:P_reason)
-            ON DUPLICATE KEY UPDATE
-            P_name = VALUES(P_name),
-            H_number = VALUES(H_number),
-            H_name = VALUES(H_name),
-            P_reason = VALUES(P_reason)";
-    $stmt = $PDO->prepare($sql);
-    $params = array(':P_name'=>$p_name,':H_number'=>$h_number,':H_name'=>$h_name,
-                   ':P_reason'=>$p_reason);
-    $stmt->execute($params);
-
     //画面表示
     $sql2 = 'SELECT * FROM host_data';
     $stmt2 = $PDO->query($sql2);
