@@ -12,6 +12,9 @@
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 </head>
 <body>
+  <div align="right">
+    <button onclick="location.href='login.php'">管理者ページ</button>
+  </div>
   <button class="title" onclick="location.href='main.php'">GallopGenius</button>
   <div class="ue">
     <button onclick="location.href='yosou.php'" class="botan">AI予想</button>
